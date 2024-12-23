@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Web Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">David K</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hello, I'm David K</h1>
+    <p>Your Web Developer (Designer)</p>
+    <a href="#projects" class="cta">See My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a web developer with experience in building dynamic and responsive websites that suit your needs.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Why Get a Website?</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>1</h3>
+        <p>Increased visibility and accessibility.</p>
+      </div>
+      <div class="skill-card">
+        <h3>2</h3>
+        <p>Be professional and gain credibility.</p>
+      </div>
+      <div class="skill-card">
+        <h3>3</h3>
+        <p>Marketing and communication platform.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Take a look at one of the projects I completed.</p>
+        <a href="shule1.html" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>My latest project I thought you should see.</p>
+        <a href="404.html" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" class="icon instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100071136194775&mibextid=ZbWKwL" target="_blank" class="icon facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/+254704386949" target="_blank" class="icon whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024. David Karakacha.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("nav-links");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: silver;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensures padding doesn’t overflow */
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: auto; /* Ensures it stays on the far right */
+    position: relative; /* Allows for further fine-tuning if needed */
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background-color: gray;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 20px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: lightcyan;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.content-section {
+    padding: 80px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+footer {
+    background-color: silver;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+   
+}
+
+@media (max-width: 768px) {
+    header img {
+        height: 40px;
+    }
+    .content-section {
+        padding: 70px 10px 10px;
+    }
+    .menu-icon {
+        font-size: 30px; /* Increase size slightly for smaller screens */
+    }
+}
