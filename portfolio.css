@@ -80,7 +80,7 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('/projet/2024122312040082.jpg') no-repeat center center/cover;
+  background: url('2024122312040082.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
 }
