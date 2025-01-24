@@ -82,7 +82,7 @@ header {
 .hero {
   text-align: center;
   font-weight: bolder;
-  background: url('/Developer Dave/Law/images/karakachalegal.jpg') no-repeat center center/cover;
+  background: url('karakachalegal.jpg') no-repeat center center/cover;
   color: white;
   padding: 6rem 2rem;
   height: 100vh;
