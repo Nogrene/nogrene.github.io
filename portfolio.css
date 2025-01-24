@@ -81,7 +81,7 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('/Developer Dave/images/IMG_20210727_215621_247_045202.jpg') no-repeat center center/cover;
+  background: url('IMG_20210727_215621_247_045202.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
 }
