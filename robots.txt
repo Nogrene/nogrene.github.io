@@ -1,0 +1,6 @@
+# robots.txt for nogrene.github.io
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nogrene.github.io/sitemap.xml
