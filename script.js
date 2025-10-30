@@ -148,7 +148,7 @@ themeToggle.addEventListener('click',() =>{
 
 //google sheets//
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyz1zuVdzNKzcb2VNRg2TknCOHAtvW3nyJCNL2zpAYkqRPRCv-I88jS7zIP_GgaKYkNYA/exec'; // paste the URL from deployment
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw4jQ5l8IJkhn6VqOlE6kF4M8l50UqJaDlxEBggoOVHs3h-kJ38ecauX9v6xHyorbf0ow/exec'; // paste the URL from deployment
     const form = document.getElementById('contactForm');
   
     form.addEventListener('submit', e => {
