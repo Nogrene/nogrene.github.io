@@ -46,43 +46,43 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Form validation and submission
 const contactForm = document.getElementById('contactForm');
 const successMessage = document.getElementById('successMessage');
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw4jQ5l8IJkhn6VqOlE6kF4M8l50UqJaDlxEBggoOVHs3h-kJ38ecauX9v6xHyorbf0ow/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycby0YSEi3QR8feKEPNE41eIdnsXR3MTKqsfnFlU8JyVSiKY8lpgkh4if7HEmp827_x5VSg/exec';
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         // Simple validation
         const name = document.getElementById('name');
         const email = document.getElementById('email');
         const message = document.getElementById('message');
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         let isValid = true;
-        
+
         // Reset errors
         document.querySelectorAll('.error').forEach(error => {
             error.style.display = 'none';
         });
-        
+
         // Validate name
         if (!name.value.trim()) {
             document.getElementById('nameError').style.display = 'block';
             isValid = false;
         }
-        
+
         // Validate email
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!email.value.trim() || !emailRegex.test(email.value)) {
             document.getElementById('emailError').style.display = 'block';
             isValid = false;
         }
-        
+
         // Validate message
         if (!message.value.trim()) {
             document.getElementById('messageError').style.display = 'block';
             isValid = false;
         }
-        
+
         if (isValid) {
             const originalBtnText = submitBtn.innerText;
             submitBtn.innerText = 'Sending...';
@@ -94,25 +94,25 @@ if (contactForm) {
                 method: 'POST',
                 body: JSON.stringify(data)
             })
-            .then(response => {
-                contactForm.style.display = 'none';
-                successMessage.style.display = 'block';
-                contactForm.reset();
-                submitBtn.innerText = originalBtnText;
-                submitBtn.disabled = false;
+                .then(response => {
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    contactForm.reset();
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
 
-                // Hide success message and show the form again after 5 seconds
-                setTimeout(() => {
-                    successMessage.style.display = 'none';
-                    contactForm.style.display = 'block';
-                }, 5000);
-            })
-            .catch(error => {
-                alert('Error sending message');
-                console.error('Error:', error);
-                submitBtn.innerText = originalBtnText;
-                submitBtn.disabled = false;
-            });
+                    // Hide success message and show the form again after 5 seconds
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                        contactForm.style.display = 'block';
+                    }, 5000);
+                })
+                .catch(error => {
+                    alert('Error sending message');
+                    console.error('Error:', error);
+                    submitBtn.innerText = originalBtnText;
+                    submitBtn.disabled = false;
+                });
         }
     });
 }
@@ -139,19 +139,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('section').forEach(section => {
         observer.observe(section);
     });
-    
+
     // Observe skill cards with staggered delay
     document.querySelectorAll('.skill-card').forEach((card, index) => {
         card.style.animationDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
-    
+
     // Observe project cards
     document.querySelectorAll('.project-card').forEach((card, index) => {
         card.style.animationDelay = `${index * 0.1}s`;
         observer.observe(card);
     });
-    
+
     // Observe service cards
     document.querySelectorAll('.service-card').forEach((card, index) => {
         card.style.animationDelay = `${index * 0.1}s`;
@@ -190,8 +190,8 @@ document.addEventListener("DOMContentLoaded", () => {
     inputs.forEach(input => {
         input.addEventListener("paste", (e) => {
             e.preventDefault();
-            alert("Dave does not allow pasting on his page😛🙃");
+            alert("Don't be lazy just type it yourself 😛🙃");
         });
     });
 });
-
+

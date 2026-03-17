@@ -16,7 +16,7 @@ exports.handler = async (event) => {
     const email = params.get('email') || '';
     const message = params.get('message') || '';
 
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwjeDQXi7NdI8u31j7V4yJX8lyY60JIGuPXNovgdY9R9Fj64e6rm6ygI0H9L7QdScJU/exec';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycby0YSEi3QR8feKEPNE41eIdnsXR3MTKqsfnFlU8JyVSiKY8lpgkh4if7HEmp827_x5VSg/exec';
 
     const response = await fetch(scriptUrl + '?nocache=' + Math.random(), {
       method: 'POST',
